@@ -8,3 +8,7 @@ router.get('/', (_req, res) => res.json({ name, version, author }))
 router.get('/ping', (_req, res) => res.send('pong'))
 
 router.get('/healthz', (_req, res) => res.send('OK'))
+
+router.get('/hello', (req, res) => {
+    res.send('Hello world!')
+})
